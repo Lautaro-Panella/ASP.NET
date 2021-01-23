@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:Table BorderStyle="Groove" runat="server">
+        <asp:TableRow>
+            <asp:TableCell BackColor="LightPink" Width="150px">
+                <asp:Label runat="server">Sección Menú</asp:Label>
+                <br />
+                <br />
+                <a href="Opcion1.aspx">Opción 1</a><br />
+                <a href="Opcion2.aspx">Opción 2</a><br />
+                <a href="Opcion3.aspx">Opción 3</a>
+                <br />
+                <br />
+                <br />
+            </asp:TableCell>
+            <asp:TableCell BackColor="LightBlue" Width="600px">  
+                <asp:Label runat="server">Sección Contenido</asp:Label>
+                <br />
+                <br />
+                <br />
+                <div>
+                    <asp:ContentPlaceHolder id="CuerpoPagina" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+                <br />
+                <br />
+                <br />
+            </asp:TableCell>
+        </asp:TableRow>
+    </asp:Table>
+</body>
+</html>
